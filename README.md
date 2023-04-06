@@ -11,11 +11,11 @@ In the docker container:
 ```
 cd /root/catkin_ws
 colcon build
-source install/setup.bash
 ```
 
 launch rviz:
 ```
+source install/setup.bash
 rviz2
 ```
 
