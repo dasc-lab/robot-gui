@@ -1,0 +1,24 @@
+<library path="dasc_robot_gui">
+  <class name="dasc_robot_gui/Teleop"
+         type="dasc_robot_gui::TeleopPanel"
+         base_class_type="rviz_common::Panel">
+    <description>
+      A panel widget allowing simple diff-drive style robot base control.
+    </description>
+  </class>
+  <class name="dasc_robot_gui/Imu"
+         type="dasc_robot_gui::ImuDisplay"
+         base_class_type="rviz_common::Display">
+    <description>
+      Displays direction and scale of accelerations from sensor_msgs::msg::Imu messages.
+    </description>
+    <message_type>sensor_msgs/msg/Imu</message_type>
+  </class>
+  <class name="dasc_robot_gui/PlantFlag"
+         type="dasc_robot_gui::PlantFlagTool"
+         base_class_type="rviz_common::Tool">
+    <description>
+      Tool for planting flags on the ground plane in rviz.
+    </description>
+  </class>
+</library>
